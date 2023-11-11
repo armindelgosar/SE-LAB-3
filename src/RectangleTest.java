@@ -20,4 +20,44 @@ class RectangleTest {
         Rectangle rectangle = new Rectangle(1.1, 2.2);
         assertEquals(1.1 * 2.2, rectangle.computeArea());
     }
+
+    @Test
+    @DisplayName("Validate initial get height check")
+    void checkInitialHeightGet() {
+        Rectangle rectangle = new Rectangle(12, 15);
+        assertEquals(15, rectangle.getHeight());
+    }
+
+    @Test
+    @DisplayName("Validate initial get width check")
+    void checkInitialWidthGet() {
+        Rectangle rectangle = new Rectangle(12, 15);
+        assertEquals(12, rectangle.getWidth());
+    }
+
+    @Test
+    @DisplayName("Validate set height check")
+    void checkHeightSet() {
+        Rectangle rectangle = new Rectangle(12, 15);
+        rectangle.setHeight(22);
+        assertEquals(22, rectangle.getHeight());
+    }
+
+    @Test
+    @DisplayName("Validate set width check")
+    void checkWidthSet() {
+        Rectangle rectangle = new Rectangle(12, 15);
+        rectangle.setWidth(32);
+        assertEquals(32, rectangle.getWidth());
+    }
+
+    @Test
+    @DisplayName("Validate area after modification")
+    void checkAreaAfterSet() {
+        Rectangle rectangle = new Rectangle(4, 3);
+        rectangle.setWidth(5);
+        rectangle.setHeight(6);
+        assertEquals(5 * 6, rectangle.computeArea());
+    }
+
 }
