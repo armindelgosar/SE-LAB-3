@@ -11,11 +11,11 @@ public class Rectangle {
     }
 
     public double getWidth() {
-        return width;
+        return this.width;
     }
 
     public double getHeight() {
-        return height;
+        return this.height;
     }
 
     public void setWidth(double width) {
