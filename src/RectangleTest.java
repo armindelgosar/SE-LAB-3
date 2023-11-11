@@ -51,4 +51,13 @@ class RectangleTest {
         assertEquals(32, rectangle.getWidth());
     }
 
+    @Test
+    @DisplayName("Validate area after modification")
+    void checkAreaAfterSet() {
+        Rectangle rectangle = new Rectangle(4, 3);
+        rectangle.setWidth(5);
+        rectangle.setHeight(6);
+        assertEquals(5 * 6, rectangle.computeArea());
+    }
+
 }
