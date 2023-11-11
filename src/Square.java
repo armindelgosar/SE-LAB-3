@@ -1,3 +1,3 @@
-public class Square {
+public class Square implements Shape {
 
 }
