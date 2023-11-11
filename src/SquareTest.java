@@ -25,7 +25,7 @@ class SquareTest {
     @DisplayName("Validate set side check")
     void checkSideSet() {
         Square square = new Square(4);
-        square.setSide(5)
+        square.setSide(5);
         assertEquals(5, square.getSide());
     }
 
@@ -34,6 +34,6 @@ class SquareTest {
     void checkAreaAfterSet() {
         Square square = new Square(6);
         square.setSide(7);
-        assertEquals(7 * 7, square.computeArea())
+        assertEquals(7 * 7, square.computeArea());
     }
 }
