@@ -178,22 +178,33 @@ public class Square implements Shape {
 
 ## Questions
 
-###1
+### 1
+For testing a software we have several types of tests in this way:
+- Unit Testing
+- Integration Testing
+- System Testing
+- Functional Testing
+- Acceptance Testing
+- Smoke Testing
+- Regression Testing
+- Performance Testing
+- Security Testing
+- User Acceptance Testing
 
-No because TDD is a software development practice not a software testing practice. We should write other types of tests like integration tests and end-to-end tests in test phase of software development life cycle.
+So the answer is no, because TDD is a software development practice which only covers `Unit testing` section between different test types not a software testing practice. We should write other types of tests like integration tests and end-to-end tests in test phase of software development life cycle.
 
-###2
+### 2
 
-Granularity means how isolated or integrated the test is. For example unit tests are the most isolated tests.After that we have integration tests where we test a number of components.In the last layer we have end-to-end tests where we test the whole system based on our requirements.
+Granularity means how isolated or integrated the test is. For example `unit tests` are the most isolated tests which only cover the code base and specifically some functions are each test's target. After that we have integration tests where we test a number of components in our system which covers more various parts of project and their collaboration.In the last layer we have end-to-end tests where we test the whole system based on our requirements for which we define separate roles in our company.
 
-###3
+### 3
 
-Not necessarily. For example end-to-end tests could be written by other people to make sure we meet the requirements. There are other types of tests that require specialists like Regression tests, Performance tests, Security tests and Usability tests.
+Not necessarily. For example end-to-end tests should be written by other people to make sure we meet the requirements, in order to have a commitment to all types of testing we usually gather different people with different skills, like Automation engineer, QA, Software test engineer, ... . So, There are other types of tests that require specialists like Regression tests, Performance tests, Security tests and Usability tests.
 
-###4
+### 4
 
 SOLID principles are mainly used in design phase because that's when we create overall architecture of the system and classes to be implemented. We could also use them in construction and deployment phases because we need to change code and SOLID helps us keep our code base clean.
 
-###5
+### 5
 
-Yes because the main problem with inheritance in this problem is that when we change height in square it also changes width. When we make the object immutable this problem won't happen and therefore inheritance is appropriate.
+Yes because the main problem with inheritance in this problem is that when we change height in square it also changes width. When we make the object immutable this problem won't happen and therefore inheritance is appropriate choice. Actually this answer is consistent when we made sure that the project scope and requirements won't change later. So, if we knew that we will have some changes later, then we couldn't inherit square from square as well.
