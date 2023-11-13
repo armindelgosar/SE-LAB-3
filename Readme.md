@@ -177,3 +177,23 @@ public class Square implements Shape {
 ```
 
 ## Questions
+
+###1
+
+No because TDD is a software development practice not a software testing practice. We should write other types of tests like integration tests and end-to-end tests in test phase of software development life cycle.
+
+###2
+
+Granularity means how isolated or integrated the test is. For example unit tests are the most isolated tests.After that we have integration tests where we test a number of components.In the last layer we have end-to-end tests where we test the whole system based on our requirements.
+
+###3
+
+Not necessarily. For example end-to-end tests could be written by other people to make sure we meet the requirements. There are other types of tests that require specialists like Regression tests, Performance tests, Security tests and Usability tests.
+
+###4
+
+SOLID principles are mainly used in design phase because that's when we create overall architecture of the system and classes to be implemented. We could also use them in construction and deployment phases because we need to change code and SOLID helps us keep our code base clean.
+
+###5
+
+Yes because the main problem with inheritance in this problem is that when we change height in square it also changes width. When we make the object immutable this problem won't happen and therefore inheritance is appropriate.
